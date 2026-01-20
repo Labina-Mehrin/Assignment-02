@@ -74,6 +74,35 @@
         .host-social img{
           filter: saturate(2.2) contrast(1.15) brightness(1.15);
         }
+        
+        .tw-hover-card {
+          transition: 
+            transform 0.35s ease,
+            box-shadow 0.35s ease,
+            border-color 0.35s ease,
+            background 0.35s ease;
+        }
+        
+        .tw-hover-card:hover {
+          transform: translateY(-6px);
+          border-color: rgba(145, 0, 248, 0.6);
+          box-shadow:
+            0 20px 40px rgba(145, 0, 248, 0.25),
+            0 0 0 1px rgba(251, 9, 180, 0.15);
+        }
+        
+        .tw-hover-card:hover .tw-icon {
+          transform: scale(1.1);
+          box-shadow:
+            0 0 25px rgba(251, 9, 180, 0.6),
+            0 0 45px rgba(145, 0, 248, 0.4);
+        }
+        
+        .tw-icon {
+          transition:
+            transform 0.35s ease,
+            box-shadow 0.35s ease;
+        }
     </style>
 </head>
 <body class="bg-[#0F0628] text-white">
@@ -266,8 +295,8 @@
                 <div class="hidden lg:grid grid-cols-12 gap-8">
 
                     
-                      <div class="col-span-4 row-span-2 rounded-3xl p-10 border border-white/10" style="background: rgba(53, 17, 101, 0.4);">
-                        <div class="w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center mb-8">
+                      <div class="col-span-4 row-span-2 rounded-3xl p-10 border border-white/10 tw-hover-card" style="background: rgba(53, 17, 101, 0.4);">
+                        <div class="w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center mb-8 tw-icon">
                             <img src="./assets/headphone.png" class="w-10 h-10" alt="Premium Audio">
                         </div>
                         <h3 class="text-white text-2xl font-bold mb-4">Premium Audio Quality</h3>
@@ -278,8 +307,8 @@
                     </div>
 
                     
-                      <div class="col-span-8 rounded-3xl p-10 border border-white/10" style="background: rgba(53, 17, 101, 0.4);">
-                        <div class="w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center mb-6">
+                      <div class="col-span-8 rounded-3xl p-10 border border-white/10 tw-hover-card" style="background: rgba(53, 17, 101, 0.4);">
+                        <div class="w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center mb-6 tw-icon">
                             <img src="./assets/device.png" class="w-10 h-10" alt="Mobile Friendly">
                         </div>
                         <h3 class="text-white text-2xl font-bold mb-3">Mobile Friendly</h3>
@@ -289,8 +318,8 @@
                     </div>
 
                     
-                      <div class="col-span-8 rounded-3xl p-10 border border-white/10" style="background: rgba(53, 17, 101, 0.4);">
-                        <div class="w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center mb-6">
+                      <div class="col-span-8 rounded-3xl p-10 border border-white/10 tw-hover-card" style="background: rgba(53, 17, 101, 0.4);">
+                        <div class="w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center mb-6 tw-icon">
                             <img src="./assets/location.png" class="w-10 h-10" alt="Global Community">
                         </div>
                         <h3 class="text-white text-2xl font-bold mb-3">Global Community</h3>
@@ -300,8 +329,8 @@
                     </div>
 
                     
-                      <div class="col-span-8 rounded-3xl p-10 border border-white/10" style="background: rgba(53, 17, 101, 0.4);">
-                        <div class="w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center mb-6">
+                      <div class="col-span-8 rounded-3xl p-10 border border-white/10 tw-hover-card" style="background: rgba(53, 17, 101, 0.4);">
+                        <div class="w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center mb-6 tw-icon">
                             <img src="./assets/message.png" class="w-10 h-10" alt="Exclusive Interviews">
                         </div>
                         <h3 class="text-white text-2xl font-bold mb-3">Exclusive Interviews</h3>
@@ -312,8 +341,8 @@
                     </div>
 
                     
-                      <div class="col-span-4 rounded-3xl p-10 border border-white/10" style="background: rgba(53, 17, 101, 0.4);">
-                        <div class="w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center mb-6">
+                      <div class="col-span-4 rounded-3xl p-10 border border-white/10 tw-hover-card" style="background: rgba(53, 17, 101, 0.4);">
+                        <div class="w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center mb-6 tw-icon">
                             <img src="./assets/resource.png" class="w-10 h-10" alt="Rich Resources">
                         </div>
                         <h3 class="text-white text-2xl font-bold mb-3">Rich Resources</h3>
@@ -326,31 +355,31 @@
 
                 
                 <div class="lg:hidden grid grid-cols-1 gap-6">
-                    <div class="rounded-3xl p-8 border border-white/10" style="background: rgba(53, 17, 101, 0.4);">
+                    <div class="rounded-3xl p-8 border border-white/10 tw-hover-card" style="background: rgba(53, 17, 101, 0.4);">
                         <img src="./assets/headphone.png" class="w-10 h-10 mb-5" alt="">
                         <h3 class="text-white text-xl font-bold mb-3">Premium Audio Quality</h3>
                         <p class="text-white/60">Experience crystal-clear sound with professional mastering.</p>
                     </div>
 
-                      <div class="rounded-3xl p-8 border border-white/10" style="background: rgba(53, 17, 101, 0.4);">
+                      <div class="rounded-3xl p-8 border border-white/10 tw-hover-card" style="background: rgba(53, 17, 101, 0.4);">
                         <img src="./assets/device.png" class="w-10 h-10 mb-5" alt="">
                         <h3 class="text-white text-xl font-bold mb-3">Mobile Friendly</h3>
                         <p class="text-white/60">Listen anywhere with seamless mobile experience and offline downloads.</p>
                     </div>
 
-                      <div class="rounded-3xl p-8 border border-white/10" style="background: rgba(53, 17, 101, 0.4);">
+                      <div class="rounded-3xl p-8 border border-white/10 tw-hover-card" style="background: rgba(53, 17, 101, 0.4);">
                         <img src="./assets/location.png" class="w-10 h-10 mb-5" alt="">
                         <h3 class="text-white text-xl font-bold mb-3">Global Community</h3>
                         <p class="text-white/60">Connect with listeners from around the world.</p>
                     </div>
 
-                      <div class="rounded-3xl p-8 border border-white/10" style="background: rgba(53, 17, 101, 0.4);">
+                      <div class="rounded-3xl p-8 border border-white/10 tw-hover-card" style="background: rgba(53, 17, 101, 0.4);">
                         <img src="./assets/message.png" class="w-10 h-10 mb-5" alt="">
                         <h3 class="text-white text-xl font-bold mb-3">Exclusive Interviews</h3>
                         <p class="text-white/60">Deep conversations with tech leaders and innovators.</p>
                     </div>
 
-                      <div class="rounded-3xl p-8 border border-white/10" style="background: rgba(53, 17, 101, 0.4);">
+                      <div class="rounded-3xl p-8 border border-white/10 tw-hover-card" style="background: rgba(53, 17, 101, 0.4);">
                         <img src="./assets/resource.png" class="w-10 h-10 mb-5" alt="">
                         <h3 class="text-white text-xl font-bold mb-3">Rich Resources</h3>
                         <p class="text-white/60">Show notes, transcripts, and learning materials included.</p>
