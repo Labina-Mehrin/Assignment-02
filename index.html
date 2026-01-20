@@ -16,16 +16,20 @@
     <link rel="stylesheet" href="./style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        /* Custom Font Import */
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
         
+        /* Global Font Family */
         * {
             font-family: 'Inter', sans-serif;
         }
         
+        /* Gradient Button Style */
         .gradient-btn {
             background: linear-gradient(90deg, #EC4899 0%, #8B5CF6 100%);
         }
         
+        /* Gradient Text Style */
         .gradient-text {
             background: linear-gradient(90deg, #EC4899 0%, #8B5CF6 100%);
             -webkit-background-clip: text;
@@ -33,12 +37,14 @@
             background-clip: text;
         }
         
+        /* Card Blur Effect */
         .card-blur {
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
         
+        /* Hover Scale Animation */
         .hover-scale {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
@@ -48,7 +54,7 @@
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
         }
         
-        
+        /* Figma-inspired Gradient */
         .figma-grad {
           background: linear-gradient(90deg,
             rgba(247, 233, 63, 1) 0%,
@@ -56,6 +62,8 @@
             rgba(145, 0, 248, 1) 100%
           );
         }
+        
+        /* Figma-inspired Gradient Text */
         .figma-grad-text {
           background: linear-gradient(90deg,
             rgba(247, 233, 63, 1) 0%,
@@ -67,12 +75,12 @@
           -webkit-text-fill-color: transparent;
         }
         
-        
+        /* Figma Icon Filter Effect */
         .figma-icon {
           filter: hue-rotate(250deg) saturate(2.5) brightness(1.2);
         }
         
-        
+        /* Host Social Icon Filter */
         .host-social img{
           filter: saturate(2.2) contrast(1.15) brightness(1.15);
         }
