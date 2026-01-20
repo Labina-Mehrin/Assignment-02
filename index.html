@@ -16,20 +16,16 @@
     <link rel="stylesheet" href="./style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Custom Font Import */
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
         
-        /* Global Font Family */
         * {
             font-family: 'Inter', sans-serif;
         }
         
-        /* Gradient Button Style */
         .gradient-btn {
             background: linear-gradient(90deg, #EC4899 0%, #8B5CF6 100%);
         }
         
-        /* Gradient Text Style */
         .gradient-text {
             background: linear-gradient(90deg, #EC4899 0%, #8B5CF6 100%);
             -webkit-background-clip: text;
@@ -37,14 +33,12 @@
             background-clip: text;
         }
         
-        /* Card Blur Effect */
         .card-blur {
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
         
-        /* Hover Scale Animation */
         .hover-scale {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
@@ -54,7 +48,6 @@
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
         }
         
-        /* Figma-inspired Gradient */
         .figma-grad {
           background: linear-gradient(90deg,
             rgba(247, 233, 63, 1) 0%,
@@ -63,7 +56,6 @@
           );
         }
         
-        /* Figma-inspired Gradient Text */
         .figma-grad-text {
           background: linear-gradient(90deg,
             rgba(247, 233, 63, 1) 0%,
@@ -75,12 +67,10 @@
           -webkit-text-fill-color: transparent;
         }
         
-        /* Figma Icon Filter Effect */
         .figma-icon {
           filter: hue-rotate(250deg) saturate(2.5) brightness(1.2);
         }
         
-        /* Host Social Icon Filter */
         .host-social img{
           filter: saturate(2.2) contrast(1.15) brightness(1.15);
         }
@@ -88,7 +78,6 @@
 </head>
 <body class="bg-[#0F0628] text-white">
     
-    <!-- Navigation Section -->
     <nav class="relative z-50 w-full bg-[#0F0628]">
         <div class="max-w-6xl mx-auto px-6 lg:px-20 py-8">
             <div class="flex items-center justify-between">
@@ -124,7 +113,6 @@
         </div>
     </nav>
 
-    <!-- Hero/Banner Section -->
     <section
         class="relative flex flex-col items-center justify-center text-center overflow-hidden"
         style="background-color: rgba(42, 24, 108, 1);"
@@ -214,7 +202,6 @@
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="w-full" style="background-color: rgba(26, 11, 46, 1);">
         <div class="mx-auto max-w-[1440px] px-6 lg:px-[200px] pt-24 pb-[120px]">
 
@@ -267,7 +254,6 @@
         </div>
     </section>
 
-    <!-- Why Choose TechWave Section -->
     <section class="w-full" style="background-color: rgba(35, 14, 61, 1);">
         <div class="mx-auto max-w-[1440px] px-6 lg:px-[200px] py-24">
 
@@ -393,17 +379,14 @@
                             rel="noopener noreferrer"
                             class="relative block aspect-video overflow-hidden"
                         >
-                            <!-- Episode Thumbnail -->
                             <img
                                 src="https://img.youtube.com/vi/HAiXT1mGTXc/hqdefault.jpg"
                                 alt="The Future of AI in Everyday Life"
                                 class="w-full h-full object-cover"
                             />
 
-                            <!-- Overlay -->
                             <div class="absolute inset-0 bg-black/35 hover:bg-black/15 transition"></div>
 
-                            <!-- Play Button -->
                             <div class="absolute inset-0 flex items-center justify-center">
                                 <div
                                     class="w-14 h-14 rounded-full flex items-center justify-center"
@@ -514,7 +497,6 @@
         </div>
     </section>
 
-    <!-- Meet The Host Section -->
     <section id="host" class="w-full" style="background-color: rgba(26, 11, 46, 1);">
         <div class="mx-auto max-w-[1440px] px-6 lg:px-[200px] pt-[120px] pb-24">
 
@@ -583,13 +565,11 @@
       />
         <div class="relative z-10 mx-auto max-w-[1440px] px-6 lg:px-[200px] py-16">
 
-            <!-- Footer Branding -->
             <div class="text-center">
                 <h2 class="text-5xl lg:text-6xl font-extrabold text-white tracking-tight">
                     Tech<span class="gradient-text">Wave</span>
                 </h2>
 
-                <!-- Platform Links -->
                 <div class="mt-6 flex flex-wrap items-center justify-center gap-8 text-white/80 text-sm">
             <a href="#" class="flex items-center gap-2 hover:text-white transition">
               <img src="./assets/spotify.png" class="w-4 h-4" alt="Spotify">
